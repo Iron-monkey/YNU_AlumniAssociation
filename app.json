@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/service/service",
+    "pages/group/group",
+    "pages/news/detail",
+    "pages/dynamic/dynamic",
+    "pages/posts/post",
+    "pages/posts/post-detail/post-detail",
+    "pages/yssy/yssy",
+    "pages/newera/newera",
+    "pages/org/org",
+    "pages/join/join"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云大生科校友会",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#891112",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/home1.png",
+        "selectedIconPath": "images/tabbar/home2.png"
+      },
+      {
+        "pagePath": "pages/group/group",
+        "text": "组织",
+        "iconPath": "images/tabbar/org1.png",
+        "selectedIconPath": "images/tabbar/org2.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "服务",
+        "iconPath": "images/tabbar/server1.png",
+        "selectedIconPath": "images/tabbar/server2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/tabbar/me1.png",
+        "selectedIconPath": "images/tabbar/me2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

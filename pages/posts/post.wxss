@@ -1,0 +1,112 @@
+@import "post-item/post-item-template.wxss";
+text{
+  /* 设置字体 */
+  font-family: MicroSoft Yahei;
+  font-size: 24rpx;
+  color: #666;
+}
+/* 头部 */
+.header {
+  position: relative;
+  height: 180px;
+  background-color: #891112;
+}
+
+.header-bottom{
+  width: 100%;
+  height: 80px;
+  background-color: #891112;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.ynuNewsText1 {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.ynuNewsText2 {
+  position: absolute;
+  top: 35px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* 轮播图 */
+.swiper-container {
+  margin-top: initial;
+  top:65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+swiper {
+  height: 250px;
+  width: 280px;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.swiper-container {
+  position: relative;
+}
+
+.swiper-container .swiper {
+  height: 300rpx;
+}
+
+.swiper-container .swiper .img {
+  width: 100%;
+  height: 100%;
+}
+.tags-top{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tags{
+  height: 30px;
+  margin-top: 20px;
+  background-color: #fff;
+  font-size: 14px;
+  display: flex;
+}
+
+.tags image{
+  margin-top: 8px;
+  height:3px;
+  width: 30px;
+}
+
+.create{
+  position: fixed;
+  top: 85%;
+  left: 78%;
+  width: 50px;
+  height: 50px;
+}
+
+.create image{
+  width: 50px;
+  height: 50px;
+}
+
+.bottom{
+  width: 100%;
+  height: 80px;
+}

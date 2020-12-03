@@ -1,0 +1,110 @@
+page{
+  background-color: #f4f9ff;
+}
+/* 个人信息栏 */
+.avatar {
+  width: 100px;
+  height: 120px;
+}
+.avatar image {
+  margin-top: 5rpx;
+  width: 100%;
+  height: 100%;
+}
+.avatar-wrapper {
+  background: #891112;
+  padding: 25px 0;
+}
+ 
+.avatar-wrapper .avatar {
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+.avatar-wrapper .avatar image {
+  width: 100px;
+  height: 100px;
+}
+ 
+.avatar-wrapper .text {
+  text-align: center;
+  color: #fff;
+}
+/* 我的里面的服务栏 */
+.about-service {
+  background-color: #fff;
+  width: 100%;  
+  height: 80px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 7rpx 5rpx #e4e4e4;
+}
+.about-service-box{
+  width: 100%;  
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.detail {
+  margin-top: 20px;
+  width: 25%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+}
+.icon image {
+  width: 25px;
+  height: 25px;
+}
+.detail text {
+  font-size: 24rpx;
+}
+
+.alllists{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding-top: 5rpx;
+  margin-top: 10px;
+  border-top: 2rpx solid #E0E3DA;
+}
+
+.listimg image {
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+ 
+.content{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ 
+/*分割线样式*/
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 2rpx;
+}
+ 
+.arrows image {
+  vertical-align: middle;
+  width: 35px;
+  height: 20px;
+  float: right;
+  margin-left: 480rpx;
+}
+

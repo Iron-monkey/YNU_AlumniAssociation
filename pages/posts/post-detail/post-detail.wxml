@@ -1,0 +1,19 @@
+<view class='Container'>
+  <image class='head-imagee' src="{{postData.headImgSrc}}"></image>
+  <view class='author-date'>
+    <image class='avatar' src='{{postData.img.avatar}}'></image>
+    <text class='author'>{{postData.author}}</text>
+    <text class='const-text'>发表于</text>
+    <text class='date'>{{postData.dateTime}}</text>
+  </view>
+  <text class='title'>{{postData.title}}</text>
+  <view class='tool'>
+    <view class='cicle-img'>
+      <image catchtap='onCollectionTap' wx:if='{{collected}}' src='/images/sc.jpg'></image>
+      <image catchtap='onCollectionTap' wx:else src='/images/msc.jpg'></image>
+      <image catchtap='onShareTap' class='share-img' src='/images/fx.jpg'></image>
+    </view>
+    <view class='horizon'></view>
+  </view>
+  <text class='detail'>{{postData.detail}}</text>
+</view>

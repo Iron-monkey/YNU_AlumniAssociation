@@ -1,0 +1,66 @@
+<view class="header">
+  <image src="../../images/university.jpg"></image>
+</view>
+
+<!-- 服务模块 -->
+<view class="service">
+  <text>校友服务大厅</text>
+  <i-grid>
+    <i-grid-item>
+      <i-grid-icon>
+        <image src="../../images/server/著名系友.png" />
+      </i-grid-icon>
+      <i-grid-label>著名系友</i-grid-label>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <image src="../../images/server/系友企业.png" />
+      </i-grid-icon>
+      <i-grid-label>系友企业</i-grid-label>
+    </i-grid-item>    <i-grid-item>
+      <i-grid-icon>
+        <image src="../../images/server/系友活动.png" />
+      </i-grid-icon>
+      <i-grid-label>系友活动</i-grid-label>
+    </i-grid-item>
+  </i-grid>
+  <i-grid>
+    <i-grid-item>
+      <i-grid-icon>
+        <image src="../../images/server/企业入驻.png" />
+      </i-grid-icon>
+      <i-grid-label>企业入驻</i-grid-label>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <image src="../../images/server/求职招聘.png" />
+      </i-grid-icon>
+      <i-grid-label>求职招聘</i-grid-label>
+    </i-grid-item>    <i-grid-item>
+      <i-grid-icon>
+        <image src="../../images/server/学院成果.png" />
+      </i-grid-icon>
+      <i-grid-label>学院成果</i-grid-label>
+    </i-grid-item>
+  </i-grid>
+  <i-grid>
+    <i-grid-item>
+      <i-grid-icon>
+        <image src="../../images/server/找组织.png" />
+      </i-grid-icon>
+      <i-grid-label>找组织</i-grid-label>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <image src="../../images/server/找系友.png" />
+      </i-grid-icon>
+      <i-grid-label>找系友</i-grid-label>
+    </i-grid-item>
+    <i-grid-item>
+      <i-grid-icon>
+        <image src="../../images/server/院系空间.png" />
+      </i-grid-icon>
+      <i-grid-label>院系空间</i-grid-label>
+    </i-grid-item>
+  </i-grid>
+</view>

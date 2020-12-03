@@ -1,0 +1,9 @@
+<!--pages/newera/newera.wxml-->
+<view class="header">
+  <view class="ynuNewsText1">-云大生科院-</view>
+  <view class="ynuNewsText2">新生代</view>
+  <view class="text-box">
+    <l-water-flow generic:l-water-flow-item="product"/>
+  </view>
+</view>
+<view class="header-bottom"></view>

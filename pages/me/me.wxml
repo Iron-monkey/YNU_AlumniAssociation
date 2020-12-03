@@ -1,0 +1,62 @@
+<view class="avatar-wrapper">
+  <view>
+    <view class="avatar">
+      <image style="border-radius:50%;" src="{{userinfo.avatarUrl ? userinfo.avatarUrl:'../../images/mine/user.png'}}"></image>
+    </view>
+    <view class="text">
+      <text wx:if="{{userinfo.nickName}}">{{userinfo.nickName}}</text>
+      <text wx:else bindtap="toLogin">注册 / 登录</text>
+    </view>
+    <view class="text">
+      <text wx:if="{{userSign==2}}">{{"您还没有填写真实信息,请填写"}}</text>
+      <text wx:elif="{{userSign==1}}">{{"会员用户"}}</text>
+    </view>
+  </view>
+</view>
+<view class="about-service">
+  <view class="about-service-box">
+    <view class="detail">
+      <view class="icon">
+        <image src="../../images/mine/找校友.png"></image>
+      </view>
+      <text>添加系友</text>
+    </view>
+    <view class="detail">
+      <view class="icon">
+        <image src="../../images/mine/系统消息.png"></image>
+      </view>
+      <text>系统消息</text>
+    </view>
+    <view class="detail">
+      <view class="icon">
+        <image src="../../images/mine/我的组织.png"></image>
+      </view>
+      <text>我的组织</text>
+    </view>
+    <view class="detail">
+      <view class="icon">
+        <image src="../../images/mine/我的活动.png"></image>
+      </view>
+      <text>我的活动</text>
+    </view>
+  </view>
+</view>
+<!-- 列表 -->
+<view class="alllists">
+  <block wx:for="{{menuitems}}" wx:key="menu_for">
+    <navigator url="{{item.url}}" class="lists" hover-class="none">
+    <view class='content'>
+      <view class="listimg">
+        <image src="{{item.icon}}"></image>
+      </view>
+      <view class="listtext">{{item.text}}</view>
+      <view class="listicon">{{item.tips}}</view>
+      <view class="arrows">
+        <image src="{{item.arrows}}"></image>
+      </view>
+    </view>
+    </navigator>
+    <!-- 分割线 -->
+    <view class="divLine"></view>
+  </block>
+</view>

@@ -1,0 +1,26 @@
+/* 首页头部 */
+.header {
+  height: 180px;
+  text-align: center;
+}
+.header image {
+  margin: 10px auto;
+  width: 340px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+/* 服务模块 */
+.service {
+  margin-top: 30px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.service text{
+  margin: 10px 80px;
+  display: block;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}

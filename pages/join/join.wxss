@@ -1,0 +1,5 @@
+/* pages/join/join.wxss */
+@import "/style/weui.wxss";
+page{
+  background-color: #f4f9ff;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "content-card": "/components/content-card/index",
+    "l-tabs": "../newera/dist/tabs/index",
+    "l-tabpanel": "../newera/dist/tabpanel/index"
+  },
+  "navigationBarTitleText": "组织信息"
+}

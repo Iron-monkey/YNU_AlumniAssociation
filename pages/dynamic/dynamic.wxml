@@ -1,0 +1,37 @@
+<!--pages/dynamic/dynamic.wxml-->
+<view class="header">
+  <view class="ynuNewsText1">-云大生科院-</view>
+  <view class="ynuNewsText2">学院动态</view>
+  <view class="swiper-container"> 
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">  
+      <block wx:for="{{imgUrls}}" wx:key="unique">     
+              <swiper-item>        
+                  <image src="{{item}}" class="img" bindtap="swipclick" />                            </swiper-item>    
+      </block>  
+    </swiper>
+  </view>
+</view>
+<view class="header-bottom"></view>
+<view class="tags-top">
+  <view class="tags">
+    <image class="img1" src="../../icon/虚线.png"></image>
+    <view>动态资讯</view>
+    <image class="img2" src="../../icon/虚线.png"></image>
+  </view>
+</view>
+<view class="newsList">
+  <view wx:for="{{newsList}}" wx:if="{{index<5}}" class="imgbox">
+    <navigator url="../news/detail?id={{item.uniquekey}}">
+        <view class="list_item clearfix">
+          <view class="newspic" style="background-image:url('../../images/university.jpg');">
+             <image src="{{item.thumbnail_pic_s}}"></image>
+          </view>
+          <view class="newstitle">{{item.title}}</view>
+          <view class="newsfoot">
+            <view class="textfrom">来源：</view>
+            <view class="textsource">{{item.author_name}}</view>
+          </view>
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<import src="post-item/post-item-template.wxml" />
+<view>
+  <view class="header">
+    <view class="ynuNewsText1">-云大生科院-</view>
+    <view class="ynuNewsText2">毕业季</view>
+    <view class="swiper-container"> 
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">  
+        <block wx:for="{{imgUrls}}" wx:key="unique">     
+                <swiper-item>        
+                    <image src="{{item}}" class="img" bindtap="swipclick" />                            </swiper-item>    
+        </block>  
+      </swiper>
+    </view>
+  </view>
+  <view class="header-bottom"></view>
+  <view class="tags-top">
+    <view class="tags">
+      <image class="img1" src="../../icon/虚线.png"></image>
+      <view>毕业寄语</view>
+      <image class="img2" src="../../icon/虚线.png"></image>
+    </view>
+  </view>
+  <block wx:for="{{posts_key}}" wx:for-item='item'>
+    <!-- 添加一个view标签，用于附着点击事件 -->
+    <view catchtap='onPostTap' data-postId = "{{item.postId}}">
+      <!-- template -->
+      <template is='postItem' data="{{...item}}" />
+    </view>
+  </block>
+</view>
+<view class="bottom"></view>
+<view class="create">
+  <image src="../../icon/write.png"></image>
+</view>

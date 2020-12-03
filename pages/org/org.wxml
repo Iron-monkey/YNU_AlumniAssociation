@@ -1,0 +1,71 @@
+<!--pages/org/org.wxml-->
+<view class='Container'>
+  <view class="org-box">
+    <view class="org-name">云大生科院系友总会</view>
+    <view class="org-join" bindtap="joinApply">申请加入</view>
+  </view>
+  <view class="header">
+    <image src="../../images/university.jpg"></image>
+  </view>
+  <content-card l-content="content">
+    <l-tabs animated l-class-tabimage="tab-image" has-line="{{false}}" bind:linchange="Change">
+      <l-tabpanel wx:for="{{imagesTabs}}" tab="{{item.tab}}" key="{{item.key}}" slot="{{item.key}}" wx:key="key" image="{{item.image}}" pic-placement="{{item.picPlacement}}">
+      </l-tabpanel>
+    </l-tabs>
+  </content-card>
+</view>
+<block wx:if="{{currentIndex==0}}">
+  <view class="org-text" wx:for="{{text}}">
+    <text>{{text[index]}}</text>
+  </view>
+</block>
+<block wx:if="{{currentIndex==1}}">
+  <view class="headLine box box-tb">
+    <view class="headLineWra box box-lr" wx:for="{{headLineList}}" bindtap="jumpDetails" data-Id="{{item.id}}" >
+      <view class="headLineContent box box-tb box-align-center box-pack-around">
+        <view class="headLineTitle">{{item.title}}</view>
+        <view class="headLineInfor box box-lr box-pack-between">
+          <view class="headLineSource">日期: {{item.date}}</view>
+          <view class="headLineSource">组织：{{item.source}}</view>
+        </view>
+      </view>
+      <view class="arrowsBox box box-tb box-pack-center">
+        <image src="../../images/org/活动.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="moreButton" bindtap="loadMore">点击加载更多</view>
+</block>
+<block wx:if="{{currentIndex==2}}">
+  <view wx:for="{{member}}">
+    <navigator url="" class="weui-cell">
+      <view class="weui-flex weui-cell__ft_in-access">
+        <image class="kind-list__img" src="../../icon/头像.png"></image>
+        <view class="weui-flex__item" style="flex-direction:column;">
+            <view>{{item.name}}</view>
+            <view class="page__desc">{{item.identity}}</view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</block>
+<block wx:if="{{currentIndex==3}}">
+  <!-- 内容 -->
+  <view class='list-item' wx:for="{{HotImgUrls}}" wx:key="url" wx:for-item="item">
+    <!-- 文章图片 -->
+    <view class='list-item-image'>
+      <image src='{{item.url}}'  class="slide-image" mode='scaleToFill'></image>
+      <!-- 作者头像 -->
+      <image src='{{item.head}}'  class="avatar" mode='scaleToFill'></image>
+    </view>
+    <!-- 文章内容 -->
+    <view class='list-item-text'>
+      <view class='list-item-text-title'>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='list-item-text-context' >
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</block>

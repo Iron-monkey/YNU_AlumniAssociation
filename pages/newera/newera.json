@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "l-water-flow":"./dist/water-flow/index",
+    "product":"./component/product/index"
+  }
+}

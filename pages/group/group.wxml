@@ -1,0 +1,123 @@
+<view class="header">
+  <view class="search">
+    <view class="search_icon">
+      <image src="../../icon/搜索.png"></image>
+    </view>
+    <input type="text" name="searchTxt" id="searchTxt" placeholder="搜索组织或关键字"></input>
+  </view>
+  <view class="chose">
+    <i-tabs current="{{ current_scroll }}" scroll bindchange="handleChangeScroll">
+      <i-tab key="tab1" title="全部"></i-tab>
+      <i-tab key="tab2" title="生科院系友总会"></i-tab>
+      <i-tab key="tab3" title="专业系友分会"></i-tab>
+      <i-tab key="tab4" title="地方系友分会"></i-tab>
+      <i-tab key="tab5" title="兴趣系友会"></i-tab>
+      <i-tab key="tab6" title="其他"></i-tab>
+    </i-tabs>
+  </view>
+</view>
+<view class="groupDetails">
+  <view class="groupImg" bindtap="onGClinked">
+    <image src="../../images/group/1.jpg"></image>
+    <view class="group-name">
+      <text class="groupName">生科院系友总会</text>
+      <view>
+        <text class="action">人数</text>
+        <text class="huoyuedu">活跃度</text>
+      </view>
+    </view>
+    <view class="join" bindtap="joinApply">加入</view>
+  </view>
+  <view class="groupImg" bindtap="onGClinked">
+    <image src="../../images/group/2.jpg"></image>
+    <view class="group-name">
+      <text class="groupName">云大生科院青志部</text>
+      <view>
+        <text class="action">人数</text>
+        <text class="huoyuedu">活跃度</text>
+      </view>
+    </view>
+    <view class="join" bindtap="joinApply">加入</view>
+  </view>
+  <view class="groupImg" bindtap="onGClinked">
+    <image src="../../images/group/1.jpg"></image>
+    <view class="group-name">
+      <text class="groupName">云大生科研究生</text>
+      <view>
+        <text class="action">人数</text>
+        <text class="huoyuedu">活跃度</text>
+      </view>
+    </view>
+    <view class="join" bindtap="joinApply">加入</view>
+  </view>
+  <view class="groupImg" bindtap="onGClinked">
+    <image src="../../images/group/1.jpg"></image>
+    <view class="group-name">
+      <text class="groupName">植物科学</text>
+      <view>
+        <text class="action">人数</text>
+        <text class="huoyuedu">活跃度</text>
+      </view>
+    </view>
+    <view class="join" bindtap="joinApply">加入</view>
+  </view>
+  <view class="groupImg" bindtap="onGClinked">
+    <image src="../../images/group/1.jpg"></image>
+    <view class="group-name">
+      <text class="groupName">动物科学</text>
+      <view>
+        <text class="action">人数</text>
+        <text class="huoyuedu">活跃度</text>
+      </view>
+    </view>
+    <view class="join" bindtap="joinApply">加入</view>
+  </view>
+  <view class="groupImg" bindtap="onGClinked">
+    <image src="../../images/group/1.jpg"></image>
+    <view class="group-name">
+      <text class="groupName">微生物科学</text>
+      <view>
+        <text class="action">人数</text>
+        <text class="huoyuedu">活跃度</text>
+      </view>
+    </view>
+    <view class="join" bindtap="joinApply">加入</view>
+  </view>
+  <view class="groupImg" bindtap="onGClinked">
+    <image src="../../images/group/1.jpg"></image>
+    <view class="group-name">
+      <text class="groupName">遗传科学</text>
+      <view>
+        <text class="action">人数</text>
+        <text class="huoyuedu">活跃度</text>
+      </view>
+    </view>
+    <view class="join" bindtap="joinApply">加入</view>
+  </view>
+  <view class="groupImg" bindtap="onGClinked">
+    <image src="../../images/group/1.jpg"></image>
+    <view class="group-name">
+      <text class="groupName">细胞生物学</text>
+      <view>
+        <text class="action">人数</text>
+        <text class="huoyuedu">活跃度</text>
+      </view>
+    </view>
+    <view class="join" bindtap="joinApply">加入</view>
+  </view>
+  <view class="groupImg" bindtap="onGClinked">
+    <image src="../../images/group/1.jpg"></image>
+    <view class="group-name">
+      <text class="groupName">生物化学与分子生物学</text>
+      <view>
+        <text class="action">人数</text>
+        <text class="huoyuedu">活跃度</text>
+      </view>
+    </view>
+    <view class="join" bindtap="joinApply">加入</view>
+  </view>
+</view>
+<view class="bottom"></view>
+<view class="create">
+  <image src="../../images/group/创建.png"></image>
+</view>

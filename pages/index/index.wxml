@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="header">
+  <text class="ynuNewsText">云大生科院资讯</text>
+  <view class="swiper-container"> 
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{duration}}" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">  
+      <block wx:for="{{imgUrls}}" wx:key="unique">     
+              <swiper-item>        
+                  <image src="{{item}}" class="img" bindtap="swipclick" />                            </swiper-item>    
+      </block>  
+    </swiper>
+  </view>
+</view>
+
+
+<!-- 新闻轮播图 -->
+<view class="navigation">
+  <view class="nav_icon" bindtap="dynamic">
+    <image src="../../icon/学院动态.png" mode="aspectFit"></image>
+    <text>学院动态</text>
+  </view>
+  <view class="nav_icon" bindtap="newera">
+      <image src="../../icon/新生代.png" mode="aspectFit"></image>
+      <text>新生代</text>
+  </view>
+  <view class="nav_icon" bindtap="SeniorYear">
+      <image src="../../icon/毕业季.png" mode="aspectFit"></image>
+      <text>毕业季</text>
+  </view>
+  <view class="nav_icon" bindtap="Yssy">
+      <image src="../../icon/饮水思源.png" mode="aspectFit"></image>
+      <text>饮水思源</text>
+  </view>
+</view>
+
+<!-- 新闻中心 -->
+<view class="Header-box">
+  <view class="newsHeader">
+    <image src="../../icon/新闻中心.png"></image>
+    <text>新闻中心</text>
+  </view>
+</view>
+<view class="newsList">
+  <view wx:for="{{newsList}}" wx:if="{{index<5}}" class="imgbox">
+    <navigator url="../news/detail?id={{item.uniquekey}}">
+        <view class="list_item clearfix">
+          <view class="newspic" style="background-image:url('../../images/university.jpg');">
+             <image src="{{item.thumbnail_pic_s}}"></image>
+          </view>
+          <view class="newstitle">{{item.title}}</view>
+          <view class="newsfoot">
+            <view class="textfrom">来源：</view>
+            <view class="textsource">{{item.author_name}}</view>
+          </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+

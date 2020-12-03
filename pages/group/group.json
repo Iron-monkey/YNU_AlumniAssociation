@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "i-tabs": "../../dist/tabs/index",
+    "i-tab": "../../dist/tab/index"
+  },
+  "navigationBarTitleText": "系友组织列表"
+}
