@@ -1,0 +1,7 @@
+<!-- 搜索框 -->
+<view class="search">
+  <view class="search_icon">
+    <image src="../../icon/搜索.png"></image>
+  </view>
+  <input type="text" name="search_input" id="search_input" placeholder="搜索" />
+</view>

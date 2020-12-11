@@ -1,0 +1,11 @@
+<view class="window">
+  <text class="title">校友信息</text>
+  <!-- 对于右边需要输入哪些内容的提示信息 -->
+  <view class="Info" wx:for="{{Info}}" wx:key="text">
+    <text class="info_text {{item.required? 'required':''}}">{{item.text}} </text>
+    <!-- 需要用户输入信息的模块 -->
+    <input type="text" name="alumniName_input" id="alumniName_input" placeholder="{{item.placeholder}}" />
+  </view>
+  <!-- 注册按钮 -->
+  <button class="registered" type="primary">注册</button>
+</view>

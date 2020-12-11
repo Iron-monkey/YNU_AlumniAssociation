@@ -1,0 +1,25 @@
+.search {
+  height: 60rpx;
+  background-color: #e4e4e4;
+  padding: 20rpx;
+  position: relative;
+}
+.search_icon {
+  position: absolute;
+  left: 25rpx;
+  top: 25rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.search_icon image {
+  width: 90%;
+  height: 90%;
+}
+.search input {
+  width: 90%;
+  height: 60rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  padding-left: 60rpx;
+  line-height: 60rpx;
+}

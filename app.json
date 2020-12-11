@@ -11,7 +11,17 @@
     "pages/yssy/yssy",
     "pages/newera/newera",
     "pages/org/org",
-    "pages/join/join"
+    "pages/join/join",
+    "pages/login/login",
+    "pages/addFriends/addFriends",
+    "pages/systemMessage/systemMessage",
+    "pages/myGroup/myGroup",
+    "pages/myActivities/myActivities",
+    "pages/myInfo/myInfo",
+    "pages/myPhoto/myPhto",
+    "pages/myFriends/myFriends",
+    "pages/about/about"
+
   ],
   "window": {
     "backgroundTextStyle": "light",

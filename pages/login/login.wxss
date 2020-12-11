@@ -1,0 +1,21 @@
+.window {
+  margin: 0 10rpx;
+}
+.lh {
+  margin: 30rpx 0;
+}
+/* 校友信息 */
+.title {
+  color: cornflowerblue;
+}
+/* 下列需要填写的注册信息 */
+.Info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50rpx 30rpx;
+}
+.required::after {
+  content: "*";
+  color: red;
+}

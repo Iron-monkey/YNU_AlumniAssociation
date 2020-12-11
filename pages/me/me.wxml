@@ -15,29 +15,11 @@
 </view>
 <view class="about-service">
   <view class="about-service-box">
-    <view class="detail">
+    <view class="detail" wx:for="{{about_service_data}}" wx:key="text" bindtap="about_service_tap" data-index="{{index}}">
       <view class="icon">
-        <image src="../../images/mine/找校友.png"></image>
+        <image src="{{item.icon_src}}"></image>
       </view>
-      <text>添加系友</text>
-    </view>
-    <view class="detail">
-      <view class="icon">
-        <image src="../../images/mine/系统消息.png"></image>
-      </view>
-      <text>系统消息</text>
-    </view>
-    <view class="detail">
-      <view class="icon">
-        <image src="../../images/mine/我的组织.png"></image>
-      </view>
-      <text>我的组织</text>
-    </view>
-    <view class="detail">
-      <view class="icon">
-        <image src="../../images/mine/我的活动.png"></image>
-      </view>
-      <text>我的活动</text>
+      <text>{{item.text}}</text>
     </view>
   </view>
 </view>

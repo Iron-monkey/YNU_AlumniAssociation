@@ -1,0 +1,21 @@
+<!-- 搜索框 -->
+<view class="search">
+  <view class="search_icon">
+    <image src="../../icon/搜索.png"></image>
+  </view>
+  <input type="text" name="search_input" id="search_input" placeholder="搜索" />
+</view>
+<!-- 功能列表 -->
+<block wx:for="{{function_list}}" wx:key="text">
+  <view class="function_a">
+    <view class="function_left">
+      <view class="function_icon">
+        <image src="{{item.icon_src}}" mode="widthFix"></image>
+      </view>
+      <text class="function_text">{{item.text}}</text>
+    </view>
+    <view class="function_right">
+      <image src="{{item.right_src}}" mode="widthFix"></image>
+    </view>
+  </view>
+</block>

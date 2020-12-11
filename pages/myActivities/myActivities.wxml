@@ -1,0 +1,45 @@
+<!-- 搜索框 -->
+<view class="search">
+  <view class="search_icon">
+    <image src="../../icon/搜索.png"></image>
+  </view>
+  <input type="text" name="search_input" id="search_input" placeholder="搜索" />
+</view>
+
+<!-- 活动列表 -->
+<view class="Activities">
+  <view class="activities_detail">
+    <view class="activitiesImg">
+      <image src="../../images/test.jpeg" mode="widthFix"></image>
+    </view>
+    <view class="activitiesText">
+      <text class="activitiesText-Header">2020年度校友工作会议</text>
+      <view class="activities_intro">
+        <view>
+          <text class="activities_date">2020-04-10至2020-04-20</text>
+          <view class="activitiesLeader">校友总会</view>
+        </view>
+        <!-- 活动是否还在举行 -->
+        <view class="isActived">活动已结束</view>
+      </view>
+    </view>
+
+  </view>
+  <view class="activities_detail">
+    <view class="activitiesImg">
+      <image src="../../images/C.png" mode="widthFix"></image>
+    </view>
+    <view class="activitiesText">
+      <text class="activitiesText-Header">2020年度校友工作会议</text>
+      <view class="activities_intro">
+        <view>
+          <text class="activities_date">2020-04-10至2020-04-20</text>
+          <view class="activitiesLeader">校友总会</view>
+        </view>
+        <!-- 活动是否还在举行 -->
+        <view class="isActive">进行中</view>
+      </view>
+    </view>
+  </view>
+
+</view>
