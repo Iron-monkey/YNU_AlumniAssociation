@@ -1,2 +1,10 @@
-<!--pages/myPhoto/myPhto.wxml-->
-<text>pages/myPhoto/myPhto.wxml</text>
+<view class="myPhoto" wx:for="{{photoDate}}" wx:key="date">
+  <view class="leftDate">
+    {{item.date}}
+  </view>
+  <view class="rightPhoto">
+    <block wx:for="{{item.photoSrc}}" wx:key="id">
+    <image src="{{item.src}}"></image>
+    </block>
+  </view>
+</view>

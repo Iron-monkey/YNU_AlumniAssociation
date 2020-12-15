@@ -1,1 +1,29 @@
-/* pages/systemMessage/systemMessage.wxss */
+.list {
+  padding: 0 35rpx;
+  height: 120rpx;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  align-items: center;
+}
+.systemNotice_icon {
+  width: 64rpx;
+}
+.systemNotice_icon image {
+  width: 100%;
+}
+.systemNotice_text {
+  margin-left: 25rpx;
+  width: 400rpx;
+}
+.systemNotice_text view{
+  font-weight: 700;
+  font-size: 31rpx;
+}
+ .content {
+  color: #ccc;
+  font-size: 24rpx;
+  display: -webkit-box;
+   -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+     overflow: hidden;
+}

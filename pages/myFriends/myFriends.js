@@ -5,7 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    friends: [
+      {
+        avatorSrc: "../../images/myFriends/1.jpg",
+        nickname: "大王"
+      },
+      {
+        avatorSrc: "../../images/myFriends/2.jpg",
+        nickname: "叫我"
+      },
+      {
+        avatorSrc: "../../images/myFriends/3.jpg",
+        nickname: "来"
+      },
+      {
+        avatorSrc: "../../images/myFriends/4.jpg",
+        nickname: "巡山"
+      },
+      {
+        avatorSrc: "../../images/myFriends/5.jpg",
+        nickname: "海绵宝宝"
+      },
+      {
+        avatorSrc: "../../images/myFriends/1.jpg",
+        nickname: "派大星"
+      }
+    ]
   },
 
   /**
@@ -14,53 +39,10 @@ Page({
   onLoad: function (options) {
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  clickFriend: function(e) {
+    const index = e.currentTarget.dataset.index;
+    wx.navigateTo({
+      url: '../myFriendsDetail/myFriendsDetail',
+    })
   }
 })

@@ -51,6 +51,7 @@
 
 /* 兴趣部落 */
 .groupDetails {
+  padding: 0 20rpx;
   margin-top: 50px;
   width: 100%;
   display: flex;

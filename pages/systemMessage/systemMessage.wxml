@@ -1,2 +1,27 @@
-<!--pages/systemMessage/systemMessage.wxml-->
-<text>pages/systemMessage/systemMessage.wxml</text>
+<view class="systemNotice list">
+  <view class="systemNotice_icon">
+    <image src="../../icon/通知.png" mode="widthFix"></image>
+  </view>
+  <view class="systemNotice_text">
+    <view>系统通知</view>
+    <text class="content">关于纳西篝火打跳活动取消的通知关于纳西篝火打跳活动取消的通知关于纳西篝火打跳活动取消的通知</text>
+  </view>
+</view>
+<view class="systemNotice list">
+  <view class="systemNotice_icon">
+    <image src="../../icon/公告.png" mode="widthFix"></image>
+  </view>
+  <view class="systemNotice_text">
+    <view>校园通知</view>
+    <text class="content">关于纳西篝火打跳活动取消的通知关于纳西篝火打跳活动取消的通知关于纳西篝火打跳活动取消的通知</text>
+  </view>
+</view>
+<view class="systemNotice list">
+  <view class="systemNotice_icon">
+    <image src="../../icon/信封.png" mode="widthFix"></image>
+  </view>
+  <view class="systemNotice_text">
+    <view>系统公告</view>
+    <text class="content">关于纳西篝火打跳活动取消的通知关于纳西篝火打跳活动取消的通知关于纳西篝火打跳活动取消的通知</text>
+  </view>
+</view>

@@ -1,1 +1,14 @@
-/* pages/myFriends/myFriends.wxss */
+.friends {
+  height: 80rpx;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+}
+.friends image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  margin-right: 40rpx;
+}

@@ -20,7 +20,8 @@
     "pages/myInfo/myInfo",
     "pages/myPhoto/myPhto",
     "pages/myFriends/myFriends",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/myFriendsDetail/myFriendsDetail"
 
   ],
   "window": {

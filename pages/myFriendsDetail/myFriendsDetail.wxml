@@ -4,23 +4,15 @@
     <view class="avator">
       <image src="../../images/1.jpg" mode="widthFix"></image>
     </view>
-    <view class="arrow">
-      <image src="../../icon/括号.png" mode="widthFix"></image>
-    </view>
   </view>
-
 </view>
-
 <view class="infoList" wx:for="{{Info}}" wx:key="id" bindtap="clickList" data-index="{{item.index}}">
   <view class="title">
     {{item.title}}
   </view>
   <view class="rightContent">
     <view class="content">
-    {{item.content}}
-  </view>
-  <view class="arrow">
-    <image src="../../icon/括号.png" mode="widthFix"></image>
-  </view>
+      {{item.content}}
+    </view>
   </view>
 </view>

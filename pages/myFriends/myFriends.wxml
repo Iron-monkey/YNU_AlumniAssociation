@@ -1,2 +1,4 @@
-<!--pages/myFriends/myFriends.wxml-->
-<text>pages/myFriends/myFriends.wxml</text>
+<view wx:for="{{friends}}" wx:key="nickname" class="friends" data-index="{{index}}" bindtap="clickFriend">
+  <image src="{{item.avatorSrc}}" mode="widthFix"></image>
+  <text>{{item.nickname}}</text>
+</view>

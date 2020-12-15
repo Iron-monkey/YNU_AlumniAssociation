@@ -1,1 +1,23 @@
-/* pages/myPhoto/myPhto.wxss */
+.myPhoto {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  padding-top: 30rpx;
+}
+.leftDate {
+  width: 33.3%;
+  text-align: center;
+  line-height: 100rpx;
+}
+.rightPhoto {
+  padding: 0 30rpx;
+  display: flex;
+  width: 66.6%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.rightPhoto image {
+  width: 200rpx;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+  margin-right: 30rpx;
+}
