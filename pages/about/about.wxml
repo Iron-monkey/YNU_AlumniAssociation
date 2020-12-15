@@ -1,2 +1,2 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view>{{text1}}</view>
+<view>{{text2}}</view>

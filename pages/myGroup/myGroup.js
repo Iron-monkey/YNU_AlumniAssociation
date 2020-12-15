@@ -13,5 +13,10 @@ Page({
    */
   onLoad: function (options) {
 
-  }
+  },
+  onGClinked(){
+    wx.navigateTo({
+      url: '/pages/org/org',
+    })
+  },
 })

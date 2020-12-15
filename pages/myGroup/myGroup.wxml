@@ -5,3 +5,15 @@
   </view>
   <input type="text" name="search_input" id="search_input" placeholder="搜索" />
 </view>
+
+<!-- 我参加的组织列表 -->
+<view class="groupImg" bindtap="onGClinked">
+  <image src="../../images/group/1.jpg" mode="widthFix"></image>
+  <view class="group-name">
+    <text class="groupName">生科院系友总会</text>
+    <view>
+      <text class="action">人数</text>
+      <text class="huoyuedu">活跃度</text>
+    </view>
+  </view>
+</view>

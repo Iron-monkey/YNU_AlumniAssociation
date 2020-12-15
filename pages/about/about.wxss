@@ -1,1 +1,4 @@
-/* pages/about/about.wxss */
+view {
+  text-indent: 2em;
+  font-size: 32rpx;
+}

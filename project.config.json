@@ -62,8 +62,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/myFriendsDetail/myFriendsDetail",
-          "pathName": "pages/myFriendsDetail/myFriendsDetail",
+          "name": "pages/myGroup/myGroup",
+          "pathName": "pages/myGroup/myGroup",
           "query": "",
           "scene": null
         }
