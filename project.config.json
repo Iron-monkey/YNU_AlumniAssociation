@@ -62,8 +62,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/myGroup/myGroup",
-          "pathName": "pages/myGroup/myGroup",
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "query": "",
           "scene": null
         }
